@@ -16,3 +16,5 @@ newman run API Automation Project - User API.postman_collection.jsonlection.json
 ├── API Automation Project - User API.postman_collection.json
 ├── Production.postman_environment.json
 ├── README.md
+
+https://github.com/montriv/API-Automation-Postman/blob/54eb927a3db35b80c4f9d7e81992266395a93052/api-automation.png
