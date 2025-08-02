@@ -11,7 +11,7 @@ This project tests the ReqRes user API using Postman and Newman.
 ```bash
 newman run API Automation Project - User API.postman_collection.jsonlection.json -e Production.postman_environment.json -r cli,html
 
-https://github.com/montriv/API-Automation-Postman/blob/54eb927a3db35b80c4f9d7e81992266395a93052/api-automation.png
+!image[alt_text](https://github.com/montriv/API-Automation-Postman/blob/54eb927a3db35b80c4f9d7e81992266395a93052/api-automation.png)
 
 ## Folder Structure
 /api-automation-postman/
