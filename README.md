@@ -9,7 +9,7 @@ This project tests the ReqRes user API using Postman and Newman.
 
 ## Run the tests
 ```bash
-newman run colAPI Automation Project - User API.postman_collection.jsonlection.json -e Production.postman_environment.json -r cli,html
+newman run API Automation Project - User API.postman_collection.jsonlection.json -e Production.postman_environment.json -r cli,html
 
 ## Folder Structure
 /api-automation-postman/
