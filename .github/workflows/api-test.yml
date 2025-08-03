@@ -19,12 +19,11 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install Newman
-        run: npm install -g newman
-
-      - name: Install Newman Report
-        run: npm install -g newman-reporter-htmlextra    
-
+      - name: Install Newman and htmlextra reporter
+        run: |
+            npm install -g newman
+            npm install -g newman-reporter-htmlextra
+            
       - name: Run API Tests
         run: |
           newman run "API Automation Project - User API.postman_collection.json" \
@@ -32,7 +31,7 @@ jobs:
             -r htmlextra \
             --reporter-htmlextra-export newman-report.html
 
-      - name: Upload HTML Report
+      - name: Upload Newman Report
         uses: actions/upload-artifact@v4
         with:
           name: api-test-report
