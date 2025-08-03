@@ -30,7 +30,7 @@ jobs:
           newman run "API Automation Project - User API.postman_collection.json" \
             -e Production.postman_environment.json \
             -r htmlextra \
-            --reporter htmlextra-export newman-report.html
+            --reporter-htmlextra-export newman-report.html
 
       - name: Upload HTML Report
         uses: actions/upload-artifact@v4
