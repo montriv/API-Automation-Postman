@@ -29,8 +29,8 @@ jobs:
         run: |
           newman run "API Automation Project - User API.postman_collection.json" \
             -e Production.postman_environment.json \
-            -r htmlextra,cli,html \
-            --reporter-html-export newman-report.html
+            -r htmlextra \
+            --reporter htmlextra-export newman-report.html
 
       - name: Upload HTML Report
         uses: actions/upload-artifact@v4
